@@ -1,7 +1,7 @@
 {
-  "name": "pluralsight-redux-starter",
+  "name": "react-strongloop-heroku",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux Pluralsight course by Cory House",
+  "description": "Project to demo full stack application based on React.js, Node.js, Strongloop and deployed on Heroku cloud.",
   "scripts":{
       "prestart": "babel-node tools/startMessage.js",
       "start": "npm-run-all --parallel open:src lint:watch",
@@ -11,9 +11,16 @@
       "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
       "test:watch":"npm run test -- --watch"
   },
-  "author": "Cory House",
+  "author": "iPivot",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2",
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
